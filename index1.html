@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="forgetpass">
+        <form action="#">
+            <h2>Մոռացել եմ գաղտնաբառը</h2>
+            <label for="email">Էլ.Հասցե</label>
+            <input type="email" placeholder="Էլ.հասցե" class="forgetin" id="email" onkeypress="return /[0-9a-zA-Z]/i.test(event.key)">
+            <label for="password">Գաղտնաբառ</label> 
+            <input type="password" placeholder="Գաղտնաբառ" id="password" class="forgetin" required onkeypress="return /[0-9a-zA-Z]/i.test(event.key)">
+            <label for="password2">Կրկնել Գաղտնաբառը</label>
+            <input type="password" placeholder="Կրկնել Գաղտնաբառը" id="password2" class="forgetin" onkeypress="return /[0-9a-zA-Z]/i.test(event.key)">
+            <div class="but1">
+            <a href="index.html" class="back">
+                Վերադառնալ էջ
+            </a>
+            <button class="signin">Մուտք գործել</button>
+        </div>
+        </form>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+</head>
+<body>  
+<h2>Գրանցվիր Հիմա</h2>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#" name="form1">
+			<h1>Գրանցվիր</h1>
+			<div class="socialcontent">
+				<a href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dgo-to-account-button&service=accountsettings&ifkv=ASKXGp3GiuM_cJikbafgH9IiA7Ml0nUsc689E9UTMU-eGMO9hrkusmXqEnDH9YJvUron5KT-Kn5UDQ&theme=glif&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="fa fa-google"></i></a>
+				<a href="https://www.linkedin.com/home"><i class="fa fa-linkedin"></i></a>
+				<a href="https://www.facebook.com/?stype=lo&deoia=1&jlou=AfduQjqjKccgfuL7V_EqaSjDIfbvivbk0GVN4gwuQLdInF4F253828ugt2eO8VtkikYOWoQSPNAQdjJMNe74fnt_eiLecV1Iav_bQDnHmFBoJQ&smuh=58150&lh=Ac-zL8pOu-gLbUI2iVc"><i class="fa fa-facebook"></i></a>
+			</div>
+			<label for="name">Անուն</label>
+			<input type="text" placeholder="Անուն" class="input" id="name" onkeypress="return /[0-9a-zA-Z]/i.test(event.key)">
+			<label for="email"onclick="ValidateEmail()">Էլ .հասցե</label>
+			<input type="tel" placeholder="Էլ .հասցե" class="input" id="email" onkeypress="return /[0-9a-zA-Z]/i.test(event.key)">
+			<label for="password">Գաղտնաբառ</label>
+			<input type="password" placeholder="Գաղտնաբառ" class="input" id="password" onkeypress="return /[0-9a-zA-Z]/i.test(event.key)">
+			<button class="signup">Գրանցվել</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Մուտք Գործել</h1>
+			<div class="social">
+				<a href="https://www.facebook.com/?stype=lo&deoia=1&jlou=AfduQjqjKccgfuL7V_EqaSjDIfbvivbk0GVN4gwuQLdInF4F253828ugt2eO8VtkikYOWoQSPNAQdjJMNe74fnt_eiLecV1Iav_bQDnHmFBoJQ&smuh=58150&lh=Ac-zL8pOu-gLbUI2iVc" class="social"><i class="fa fa-facebook-f"></i></a>
+				<a href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dgo-to-account-button&service=accountsettings&ifkv=ASKXGp3GiuM_cJikbafgH9IiA7Ml0nUsc689E9UTMU-eGMO9hrkusmXqEnDH9YJvUron5KT-Kn5UDQ&theme=glif&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="social"><i class="fa fa-google"></i></a>
+				<a href="https://www.linkedin.com/home" class="social"><i class="fa fa-linkedin"></i></a>
+			</div>
+			<label for="email1">Էլ.Հասցե</label>
+			<input type="email" placeholder="Էլ.Հասցե" class="inputlog" id="email1" onkeypress="return /[0-9a-zA-Z]/i.test(event.key)"/>
+			<label for="password1">Գաղտնաբառ</label>
+			<input type="password" placeholder="Գաղտնաբառ" class="inputlog" id="password1" onkeypress="return /[0-9a-zA-Z]/i.test(event.key)"/>
+			<a href="index1.html" class="fogetpassword">Մոռացել եմ գաղտնաբառը</a>
+			<button class="login">Մուտք գործել</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Բարի Գալուստ</h1>
+				<p>Մուտք գործել ձեր անձնական տվյալներով</p>
+				<button id="signIn">Մուտք գործել</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Բարի Գալուստ</h1>
+				<p>Մուտքագրեք ձեր անձնական տվյալները</p>
+				<button id="signUp" class="logbut">Գրանցվել</button>
+			</div>
+		</div>
+	</div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
